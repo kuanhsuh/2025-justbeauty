@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    </head>
+    <body>
+        <nav class=" shadow fixed w-full z-50 top-0 ">
+            <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
+                <div class="flex h-12 justify-between">
+                    <div class="flex px-2 lg:px-0 justify-between w-full">
+                        <a href="https://aiidee.com.tw"
+                            class="flex flex-shrink-0 items-center">
+                            <img class="logo-white block w-24"
+                                src="https://aiidee.com.tw/wp-content/themes/aiidee/img/aiidee-logo-white.png"
+                                alt="Company name">
+                        </a>
+                        <div id="list"
+                            class=" hidden lg:ml-6 lg:flex lg:space-x-8">
+                            <!-- Current: "border-indigo-500 ", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
+                            <a href="https://aiidee.com.tw"
+                                class="items-center0 border-b-2 border-transparent px-1 pt-1 font-medium  hover:border-gray-300 hover:text-gray-70 border-green-700 ">首頁</a>
+
+                            <div class="dropdown">
+                                <button
+                                    class="dropbtn items-center border-b-2 border-transparent px-1 pt-1 font-medium  hover:border-gray-300 ">關於</button>
+                                <div class="dropdown-content">
+                                    <a
+                                        href="https://aiidee.com.tw/about">關於公司</a>
+                                    <a
+                                        href="https://aiidee.com.tw/team">團隊介紹</a>
+                                    <a
+                                        href="https://aiidee.com.tw/services">服務流程</a>
+                                </div>
+                            </div>
+                            <a href="https://pse.is/adwebQAup"
+                                class="items-center border-b-2 border-transparent px-1 pt-1 font-medium  hover:border-gray-300  ">預約諮詢</a>
+                            <a href="https://aiidee.com.tw/projects"
+                                class="items-center border-b-2 border-transparent px-1 pt-1 font-medium  hover:border-gray-300  ">作品總覽</a>
+                            <a href="https://aiidee.com.tw/videos-"
+                                class="items-center border-b-2 border-transparent px-1 pt-1 font-medium  hover:border-gray-300  ">影片總覽</a>
+                            <a href="https://aiidee.com.tw/news-"
+                                class="items-center border-b-2 border-transparent px-1 pt-1 font-medium  hover:border-gray-300  ">部落格</a>
+
+                            <a href="https://aiidee.com.tw/contact"
+                                class="items-center border-b-2 border-transparent px-1 pt-1 font-medium  hover:border-gray-300  ">聯絡我們</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center lg:hidden">
+                        <!-- Mobile menu button -->
+                        <button id="menuButton" type="button"
+                            class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                            aria-controls="mobile-menu" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg
+                                class="svg-icon fill-current text-gray-500 text-white  block h-6 w-6"
+                                xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                            </svg>
+                            <svg class="hidden h-6 w-6"
+                                xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div
+                class="hidden lg:hidden border-b border-gray-200 bg-white text-gray-600"
+                id="mobile-menu">
+                <div class="space-y-1 pt-2 pb-3">
+                    <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800" -->
+                    <a href="https://aiidee.com.tw"
+                        class="block border-l-4 border-green-700 bg-green-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700">首頁</a>
+                    <a href="https://aiidee.com.tw/about"
+                        class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium  hover:border-gray-70 hover:bg-gray-50">關於</a>
+                    <a href="https://aiidee.com.tw/team"
+                        class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium  hover:border-gray-70 hover:bg-gray-50">團隊介紹</a>
+                    <a href="https://aiidee.com.tw/services"
+                        class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium  hover:border-gray-70 hover:bg-gray-50">服務流程</a>
+                    <a href="https://pse.is/adwebQAup"
+                        class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium  hover:border-gray-70 hover:bg-gray-50">預約諮詢</a>
+                    <a href="https://aiidee.com.tw/projects"
+                        class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium  hover:border-gray-70 hover:bg-gray-50">作品總覽</a>
+                    <a href="https://aiidee.com.tw/videos-"
+                        class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium  hover:border-gray-70 hover:bg-gray-50">影片專區</a>
+                    <a href="https://aiidee.com.tw/news-"
+                        class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium  hover:border-gray-70 hover:bg-gray-50">部落格</a>
+                    <a href="https://aiidee.com.tw/contact"
+                        class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium  hover:border-gray-70 hover:bg-gray-50">聯絡我們</a>
+                </div>
+            </div>
+        </nav>
+
+        <header>
+            <img src="https://placehold.co/600x400/" alt
+                class="w-full h-[40rem] object-cover">
+        </header>
+
+        <section>
+            <div class="flex flex-wrap text-xl text-center font-medium">
+                <div class="bg-sky-600 text-white w-1/3 px-4 py-8">
+                    <h3 class="mb-4">
+                        Lorem ipsum dolor sit amet.
+                    </h3>
+                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit.
+                        Temporibus quisquam laborum optio facere possimus!
+                        Aspernatur.</p>
+                    <a href="#"> 了解更多</a>
+                </div>
+                <div class="bg-sky-800 text-white w-1/3 px-4 py-8">
+                    <h3 class="mb-4">
+                        Lorem ipsum dolor sit amet.
+                    </h3>
+                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit.
+                        Temporibus quisquam laborum optio facere possimus!
+                        Aspernatur.</p>
+                    <a href="#"> 了解更多</a>
+                </div><div class="bg-sky-600 text-white w-1/3 px-4 py-8">
+                    <h3 class="mb-4">
+                        Lorem ipsum dolor sit amet.
+                    </h3>
+                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit.
+                        Temporibus quisquam laborum optio facere possimus!
+                        Aspernatur.</p>
+                    <a href="#"> 了解更多</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white">
+            <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
+                <div class="mx-auto max-w-4xl">
+                    <h2
+                        class="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">常見隱適美問題</h2>
+                    <dl class="mt-16 divide-y divide-gray-900/10">
+                        <div class="py-6 first:pt-0 last:pb-0">
+                            <dt>
+                                <!-- Expand/collapse question button -->
+                                <button type="button"
+                                    class="flex w-full items-start justify-between text-left text-gray-900"
+                                    aria-controls="faq-0" aria-expanded="false">
+                                    <span
+                                        class="text-base/7 font-semibold">What&#039;s
+                                        the best thing about Switzerland?</span>
+                                    <span class="ml-6 flex h-7 items-center">
+                                        <!--
+                  Icon when question is collapsed.
+
+                  Item expanded: "hidden", Item collapsed: ""
+                -->
+                                        <svg class="size-6" fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="currentColor"
+                                            aria-hidden="true" data-slot="icon">
+                                            <path stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M12 6v12m6-6H6" />
+                                        </svg>
+                                        <!--
+                  Icon when question is expanded.
+
+                  Item expanded: "", Item collapsed: "hidden"
+                -->
+                                        <svg class="hidden size-6" fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="currentColor"
+                                            aria-hidden="true" data-slot="icon">
+                                            <path stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M18 12H6" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </dt>
+                            <dd class="mt-2 pr-12" id="faq-0">
+                                <p class="text-base/7 text-gray-600">I
+                                    don&#039;t know, but the flag is a big plus.
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quas cupiditate laboriosam
+                                    fugiat.</p>
+                            </dd>
+                        </div>
+                        <div class="py-6 first:pt-0 last:pb-0">
+                            <dt>
+                                <!-- Expand/collapse question button -->
+                                <button type="button"
+                                    class="flex w-full items-start justify-between text-left text-gray-900"
+                                    aria-controls="faq-0" aria-expanded="false">
+                                    <span
+                                        class="text-base/7 font-semibold">What&#039;s
+                                        the best thing about Switzerland?</span>
+                                    <span class="ml-6 flex h-7 items-center">
+                                        <!--
+                  Icon when question is collapsed.
+
+                  Item expanded: "hidden", Item collapsed: ""
+                -->
+                                        <svg class="size-6" fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="currentColor"
+                                            aria-hidden="true" data-slot="icon">
+                                            <path stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M12 6v12m6-6H6" />
+                                        </svg>
+                                        <!--
+                  Icon when question is expanded.
+
+                  Item expanded: "", Item collapsed: "hidden"
+                -->
+                                        <svg class="hidden size-6" fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="currentColor"
+                                            aria-hidden="true" data-slot="icon">
+                                            <path stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M18 12H6" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </dt>
+                            <dd class="mt-2 pr-12" id="faq-0">
+                                <p class="text-base/7 text-gray-600">I
+                                    don&#039;t know, but the flag is a big plus.
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quas cupiditate laboriosam
+                                    fugiat.</p>
+                            </dd>
+                        </div>
+                        <div class="py-6 first:pt-0 last:pb-0">
+                            <dt>
+                                <!-- Expand/collapse question button -->
+                                <button type="button"
+                                    class="flex w-full items-start justify-between text-left text-gray-900"
+                                    aria-controls="faq-0" aria-expanded="false">
+                                    <span
+                                        class="text-base/7 font-semibold">What&#039;s
+                                        the best thing about Switzerland?</span>
+                                    <span class="ml-6 flex h-7 items-center">
+                                        <!--
+                  Icon when question is collapsed.
+
+                  Item expanded: "hidden", Item collapsed: ""
+                -->
+                                        <svg class="size-6" fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="currentColor"
+                                            aria-hidden="true" data-slot="icon">
+                                            <path stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M12 6v12m6-6H6" />
+                                        </svg>
+                                        <!--
+                  Icon when question is expanded.
+
+                  Item expanded: "", Item collapsed: "hidden"
+                -->
+                                        <svg class="hidden size-6" fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="currentColor"
+                                            aria-hidden="true" data-slot="icon">
+                                            <path stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M18 12H6" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </dt>
+                            <dd class="mt-2 pr-12" id="faq-0">
+                                <p class="text-base/7 text-gray-600">I
+                                    don&#039;t know, but the flag is a big plus.
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quas cupiditate laboriosam
+                                    fugiat.</p>
+                            </dd>
+                        </div>
+
+                        <!-- More questions... -->
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex flex-wrap text-xl text-center font-medium">
+                <div class="bg-sky-800 text-white w-1/4 px-4 py-8">
+                    <h3 class="mb-4">
+                        Lorem ipsum dolor <br />sit amet consectetur
+                        adipisicing.
+                    </h3>
+                </div>
+                <div class="bg-sky-800 text-white w-1/4 px-4 py-8">
+                    <h3 class="mb-4">
+                        Lorem ipsum dolor <br />sit amet consectetur
+                        adipisicing.
+                    </h3>
+                </div>
+                <div class="bg-sky-800 text-white w-1/4 px-4 py-8">
+                    <h3 class="mb-4">
+                        Lorem ipsum dolor <br />sit amet consectetur
+                        adipisicing.
+                    </h3>
+                </div>
+                <div class="bg-sky-800 text-white w-1/4 px-4 py-8">
+                    <h3 class="mb-4">
+                        Lorem ipsum dolor <br />sit amet consectetur
+                        adipisicing.
+                    </h3>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex flex-wrap text-xl text-center font-medium">
+                <div class="w-1/2 px-4 py-8">
+                    <img src="https://placehold.co/600x400/" alt
+                        class="w-full h-[40rem] object-cover">
+                </div>
+                <div class="w-1/2 px-4 py-8">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Architecto sequi voluptas necessitatibus placeat
+                        harum debitis ipsum sit ea quasi dolorum qui obcaecati
+                        quia similique sed minus, ipsam amet, sunt quas?
+                    </p>
+                    <h3 class="mb-4 text-sky-800 text-2xl font-medium">
+                        經歷介紹
+                    </h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+            </section>
+        </body>
+    </html>
