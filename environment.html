@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+        <style>
+            header::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+                z-index: 10; /* Below the content container */
+            }
+            .header-bg-img > div {
+                position: relative; /* Ensures z-index works on the child div */
+                z-index: 50; /* Above the overlay */
+            }
+        </style>
+
+    </head>
+    <body>
+        <header
+            style="background: url(https://images.pexels.com/photos/7723391/pexels-photo-7723391.jpeg) center/cover; height: 300px;"
+            class="relative text-white header-bg-img ">
+            <div
+                class="max-w-4xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <h1
+                    class="text-yellow-500 text-3xl mb-8 text-center z-50">環境介紹簡介</h1>
+                <p
+                    class="text-white z-50">我們是一家結合專業技術與細緻服務的全能型牙醫診所，位於台北東區，打造宛如五星級飯店般舒適的就診環境，從植牙、美學、
+                    矯正到日常保健，每一個細節都用心守護。
+                    在這裡，我們不只治療牙齒，更照顧您的感受，讓每位走出診所的您，都能重拾自信，展現最美的笑容。""</p></div>
+        </header>
+
+        <section class="container max-w-5xl mx-auto py-8">
+            <div class="flex flex-wrap">
+                <div class="w-1/4 p-2">
+                    <img src="https://placehold.co/600x400/" alt>
+                </div>
+                <div class="w-1/4 p-2">
+                    <img src="https://placehold.co/600x400/" alt>
+                </div>
+                <div class="w-1/4 p-2">
+                    <img src="https://placehold.co/600x400/" alt>
+                </div>
+                <div class="w-1/4 p-2">
+                    <img src="https://placehold.co/600x400/" alt>
+                </div>
+                <div class="w-1/4 p-2">
+                    <img src="https://placehold.co/600x400/" alt>
+                </div>
+                <div class="w-1/4 p-2">
+                    <img src="https://placehold.co/600x400/" alt>
+                </div>
+                <div class="w-1/4 p-2">
+                    <img src="https://placehold.co/600x400/" alt>
+                </div>
+
+            </div>
+        </section>
+    </body>
+</html>
