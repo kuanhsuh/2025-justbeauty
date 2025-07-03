@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@theme {
+  --color-skin: #B4976C;
+  --color-darkskin: #8C8379
+}
