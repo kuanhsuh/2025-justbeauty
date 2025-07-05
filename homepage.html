@@ -213,28 +213,37 @@
                     class="bg-darkskin text-white w-1/2 sm:w-1/4 px-4 py-8 font-light text-sm">
                     <h3>
                         <span
-                            class="text-3xl font-medium inline-block mb-2">20年+</span><br />矯正經驗
+                            class="text-3xl font-medium inline-block mb-2"><span
+                                class="value"
+                                akhi="20">0</span>年+</span><br />矯正經驗
                     </h3>
                 </div>
                 <div
                     class="bg-darkskin text-white w-1/2 sm:w-1/4 px-4 py-8 font-light text-sm">
                     <h3>
                         <span
-                            class="text-3xl font-medium inline-block mb-2">10年+</span><br />隱適美經驗
+                            class="text-3xl font-medium inline-block mb-2">
+                            <span
+                                class="value" akhi="10">0</span>
+                            年+</span><br />隱適美經驗
                     </h3>
                 </div>
                 <div
                     class="bg-darkskin text-white w-1/2 sm:w-1/4 px-4 py-8 font-light text-sm">
                     <h3>
                         <span
-                            class="text-3xl font-medium inline-block mb-2">每年100例以上</span><br />隱適美成功案例
+                            class="text-3xl font-medium inline-block mb-2">每年<span
+                                class="value"
+                                akhi="100">0</span>例以上</span><br />隱適美成功案例
                     </h3>
                 </div>
                 <div
                     class="bg-darkskin text-white w-1/2 sm:w-1/4 px-4 py-8 font-light text-sm">
                     <h3>
                         <span
-                            class="text-3xl font-medium inline-block mb-2">累積超過2000例</span><br />成功矯正案例
+                            class="text-3xl font-medium inline-block mb-2">累積超過<span
+                                class="value"
+                                akhi="2000">0</span>例</span><br />成功矯正案例
                     </h3>
                 </div>
             </div>
@@ -767,6 +776,29 @@ document.addEventListener('DOMContentLoaded', () => {
     // 更新 ARIA 屬性
     document.getElementById('menuButton').setAttribute('aria-expanded', isExpanded);
 });
+
+const counters = document.querySelectorAll('.value');
+const speed = 20000000;
+
+counters.forEach( counter => {
+   const animate = () => {
+      const value = +counter.getAttribute('akhi');
+      const data = +counter.innerText;
+
+      const time = value / speed;
+     if(data < value) {
+          counter.innerText = Math.ceil(data + time);
+          setTimeout(animate, 25);
+        }else{
+          counter.innerText = value;
+        }
+
+   }
+
+   animate();
+});
+
+
             </script>
     </body>
 </html>
