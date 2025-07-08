@@ -639,6 +639,9 @@
   .text-left {
     text-align: left;
   }
+  .font-mono {
+    font-family: var(--font-mono);
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -713,6 +716,9 @@
   }
   .text-amber-500 {
     color: var(--color-amber-500);
+  }
+  .text-darkskin {
+    color: var(--color-darkskin);
   }
   .text-gray-100 {
     color: var(--color-gray-100);
