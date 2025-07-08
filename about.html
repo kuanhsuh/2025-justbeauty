@@ -4,29 +4,149 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <script
-            src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="output.css">
+
+        <style>
+                .bg-cover::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+                z-index: 10; /* Below the content container */
+            }
+            .header-bg-img > div {
+                position: relative; /* Ensures z-index works on the child div */
+                z-index: 50; /* Above the overlay */
+            }
+            </style>
 
     </head>
-    <body>
+    <body class="font-light tracking-wider text-gray-600 leading-8">
         <header
-            style="background: url(https://placehold.co/600x400/) center/cover; height: 300px;">
-            <h1>醫療團隊</h1>
+            style="background: url(https://images.pexels.com/photos/7723391/pexels-photo-7723391.jpeg) center/cover; height: 300px;"
+            class="relative text-white header-bg-img bg-cover">
+            <div
+                class="max-w-4xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <h1
+                    class="text-yellow-500 text-4xl mb-8 text-center z-50 font-medium">關於我們
+                </h1>
+            </div>
         </header>
 
-        <section class="container mx-auto py-16">
+        <section class="container max-w-5xl mx-auto py-16">
             <div class="flex flex-wrap">
-                <div class="w-1/2 px-8">
-                    <h2 class="text-2xl font-medium text-sky-600">Lorem ipsum
-                        dolor sit amet.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Accusantium, commodi omnis perspiciatis non quod
-                        explicabo facilis tenetur eos aliquid doloribus magni
-                        alias, maxime velit officiis aliquam libero voluptatem
-                        ducimus officia?</p>
+                <div class="w-full px-8">
+                    <h2
+                        class="py-4 mb-8 text-white bg-sky-600 text-center text-3xl tracking-widest"
+                        style="background: #588DD6;
+background: linear-gradient(90deg, rgba(88, 141, 214, 1) 0%, rgba(133, 204, 250, 1) 100%);">關於我們</h2>
+                    <p class="mb-8">美德美學醫療集團，自民國67年經營至今在地深耕近40年。
+                        創立於1978年，是台中市大里設立的第一間牙醫診所，服務至今，在地深耕超過40年，患者從小孩看到結婚生子，從年輕人看到變成阿公阿嬤，再帶著孫子來就診。老董醫師三個兒子也全部都是醫師，各自在不同領域服務，有牙科也有腎臟科。</p>
+
+                    <p class="mb-8">董牙醫是董醫師父親的診所，現在也是由董醫師接手 。
+                        董醫師在12年前創立了自己的品牌美德牙醫診所 並且拓展到中國，是廣州深圳第一間由台灣醫師設立的牙醫診所。
+                        集團其他聯盟診所，朱裕華博士，曾任中山醫學大學口腔外科主任，在中國業界人稱台灣植牙之父。
+                        朱醫師曾擔任台灣牙醫植體醫學會(TAID)-第五屆理事長，國際口腔種植醫師學會(ICOI
+                        Taiwan)-2017理事長，中華民國口腔植體學會(AOIT)-第十屆~十一屆理事長，以及亞太雷射醫學會(APLI)第六屆理事長。</p>
+
+                    <p
+                        class="mb-8">朱醫師自己擁有5間牙科診所，另外馬來西亞和中國總共合作6間診所，但是朱醫師不吝於親力親為參與美德醫療團隊，親自為美德的病人操刀。</p>
+
+                    <p class="mb-8">目前美德美學醫療集團在台中-台北-桃園-深圳
+                        共10間診所，為一全方位的醫療體系，董醫師與朱醫師更在國內外擁有多項醫療專利，並且持續研發人工智能（AI)醫療，以增進手術顯微微創及其精準度，更增加病患術後無痛及舒適感。
+                        美德團隊擁有寶貴經驗的傳承，更有精湛領先的醫療技術。
+                        更可貴的是願意聆聽病人訴求，為每個病人細心量身打造最適合自己的治療與微笑。</p>
+
                 </div>
-                <div class="w-1/2">
-                    <img src="https://placehold.co/600x400/" alt>
+            </div>
+        </section>
+
+        <section class="container max-w-5xl mx-auto py-16">
+
+            <h2
+                class="py-4 mb-8 text-white bg-sky-600 text-center text-3xl tracking-widest"
+                style="background: #588DD6;
+background: linear-gradient(90deg, rgba(88, 141, 214, 1) 0%, rgba(133, 204, 250, 1) 100%);">診所介紹</h2>
+            <div class="flex flex-wrap">
+                <div class="w-full sm:w-1/2">
+
+                    <h3
+                        class="text-skin border-b border-skin mb-8 text-xl pb-4">對美麗的堅持成就美德<br />
+                        Just
+                        Beauty, Just Love</h3>
+                    <p
+                        class="mb-8">源於從小對美的嚮往，董醫師求學時期就開始接觸設計、繪圖與攝影，對於藝術與美學有著莫大熱情，儘管後來選擇踏上專業醫療的道路，對於美的愛好與熱情始終存在。
+
+                    </p>
+
+                    <p class="mb-8">除了執業看診，董醫師也
+                        在台灣及大陸擔任講師，行醫教學十多年，看著曾經沮喪失落的病人找回牙齒的健康後的興奮雀躍，最大的成就感莫過於此。
+
+                    </p>
+
+                    <p
+                        class="mb-8">董醫師堅信一位牙醫師的價值不僅在於能把牙治療好，更能替病患找回自信與美麗，因此除了持續精進理性的牙醫技術，更將自身美學專長融入，精研
+                        DSD
+                        數位微笑設計技術與牙齒美學，創立美德美學牙醫診所，希冀以多年累積的美學素養為牙醫專業領域創造不同層次的昇華，讓以往冰冷的牙科醫療更人性、更有溫度，為病患提供更美好的看牙經驗，讓每位病患走出診間時都能綻放發自內心的燦爛笑容。</p>
+                </div>
+
+                <div class="w-full sm:w-1/2 pl-8">
+                    <img src="https://placehold.co/600x400/EEE/31343C" alt>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap">
+                <div class="w-full sm:w-1/2 ">
+
+                    <h3
+                        class="text-skin border-b border-skin mb-8 text-xl pb-4">微笑是最美的底妝<br />
+                        Smile is the BEST makeup!</h3>
+                    <p
+                        class="mb-8">發自內心的微笑不僅散發美麗自信，一抹真誠微笑就能帶來無限美好與燦爛。
+
+                    </p>
+
+                    <p class="mb-8">美德堅信微笑是最美的底妝，憑藉對美感與和諧的掌握，美德引進 DSD
+                        數位微笑設計攝影棚設備，以豐富診療經驗與精湛技術，提供讓牙齒變得健康且美麗的專業 DSD
+                        數位微笑設計與牙齒美白醫療項目，以冷光美白、陶瓷美白貼片等美學牙科技術，給您完美蛻變的體驗，為您創造最滿意的微笑曲線，讓您能盡情展現自信與笑容魅力！
+
+                    </p>
+
+                    <p
+                        class="mb-8">我們了解美的定義是很主觀也很個人的，不同臉型需要不同角度的微笑搭配才能完美，董醫師擁有
+                        DSD
+                        數位微笑設計的數位掃描與分析技術，能在輕鬆氣氛下引導您展現最自然的表情，配合多面向的完整評估與溝通，為您雕琢出獨一無二的專屬微笑曲線！</p>
+                </div>
+
+                <div class="w-full sm:w-1/2 pl-8">
+                    <img src="https://placehold.co/600x400/EEE/31343C" alt>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap">
+                <div class="w-full sm:w-1/2 ">
+
+                    <h3
+                        class="text-skin border-b border-skin mb-8 text-xl pb-4">走出美德，即刻蛻變美麗<br />Shine
+                        Your True Colors!</h3>
+                    <p
+                        class="mb-8">我們希望走出美德的每個人都能以最完美的狀態展現自信風采，特別設立 VIP
+                        休息室與補妝室，
+                        讓您在接受牙科醫療服務後有個整理儀容與梳妝的空間，擺脫做完牙齒診療的狼狽與疲倦，換上自信的外衣，擁抱嶄新的自己。
+
+                    </p>
+
+                    <p
+                        class="mb-8">美德重視您的隱私與感受，以獨立診療室與優雅舒適的環境，提供專業的醫療服務與恬適氛圍，讓您看牙醫就像找朋友聊天般的輕鬆自在，毫不費力、愉悅的走過這趟美麗旅程！
+
+                    </p>
+                </div>
+
+                <div class="w-full sm:w-1/2 pl-8">
+                    <img src="https://placehold.co/600x400/EEE/31343C" alt>
                 </div>
             </div>
         </section>
