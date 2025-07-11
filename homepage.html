@@ -8,6 +8,17 @@
         <link href="./output.css" rel="stylesheet">
 
         <style>
+            .bg-cover::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+                z-index: 10; /* Below the content container */
+            }
+
             /* CSS */
             .scroll-to-top {
             position: fixed;
@@ -98,6 +109,20 @@
                     right: 10%;
             }
 
+             .parallax {
+            /* The image used */
+            background-image: url("https://images.unsplash.com/photo-1742505709415-76b15647ae64?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+            /* Set a specific height */
+            min-height: 250px;
+            width: 100%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
                         </style>
 
     </head>
@@ -285,12 +310,14 @@
                         <dd class="mt-2 pr-12 faq-answer" id="faq-0"
                             aria-hidden="true">
                             <p
-                                class="text-base/7 text-gray-600">隱適美（Invisalign）是一種以3D數位技術製作的透明牙套矯正系統，隱適美採用3D掃描與
-                                CAD‑CAM
+                                class="text-base/7 text-gray-600">
+                                隱適美（Invisalign）是一種以 3D 數位技術製作的透明牙套矯正系統，採用 3D 掃描與
+                                CAD-CAM
                                 系統，先建立牙齒移動的全程模擬圖，再客製化透明塑膠牙套。其作用原理為「推力式」3D
-                                壓力控制（shape‑molding effect），並配置 SmartForce
-                                附件以強化特定牙齒的移動力學，如轉動、傾斜、前後移動及前牙侵入等
-                                ，使用一系列可拆卸、幾乎看不見的牙套來逐步移動牙齒。每一副牙套約每7–14天更換一次，透過微小但精準的力量設計，慢慢讓牙齒移動至理想位置。它不同於傳統金屬矯正，不需黏上牙托與鋼線，因此更加美觀、舒適、方便清潔。
+                                壓力控制（shape-molding effect），並配置 SmartForce
+                                附件以強化特定牙齒的移動力學，如轉動、傾斜、前後移動及前牙侵入等。使用一系列可拆卸、幾乎看不見的牙套來逐步移動牙齒。每一副牙套約每
+                                7–14
+                                天更換一次，透過微小但精準的力量設計，慢慢讓牙齒移動至理想位置。它不同於傳統金屬矯正，不需黏上牙托與鋼線，因此更加美觀、舒適、方便清潔。
                             </p>
                         </dd>
 
@@ -323,12 +350,14 @@
                         <dd class="mt-2 pr-12 faq-answer" id="faq-1"
                             aria-hidden="true">
                             <p class="text-base/7 text-gray-600">優點：
-                                • ✅ 外觀近乎隱形，不易被發現
-                                • ✅ 可拆式設計，飲食與清潔方便
-                                • ✅ 數位模擬，治療前就能看到預期成果
-                                • ✅ 矯正過程舒適，牙齒力量更均勻
-                                • ✅ 減少蛀牙、牙周病的風險
-                                • ✅ 不易脫落、不刺嘴
+                                <ul class="list-disc">
+                                    <li>✅ 外觀近乎隱形，不易被發現</li>
+                                    <li>✅ 可拆式設計，飲食與清潔方便</li>
+                                    <li>✅ 數位模擬，治療前就能看到預期成果</li>
+                                    <li>✅ 矯正過程舒適，牙齒力量更均勻</li>
+                                    <li>✅ 減少蛀牙、牙周病的風險</li>
+                                    <li>✅ 不易脫落、不刺嘴</li>
+                                </ul>
                             </p>
                         </dd>
 
@@ -337,9 +366,44 @@
                         <dt>
                             <button type="button"
                                 class="flex w-full items-start justify-between text-left"
+                                aria-controls="faq-6" aria-expanded="false">
+                                <span
+                                    class="text-base/7 font-semibold">Q3.
+                                    傳統矯正與隱適美的差別在哪裡？</span>
+                                <span class="ml-6 flex h-7 items-center">
+                                    <svg class="size-6" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5"
+                                        stroke="currentColor" aria-hidden="true"
+                                        data-slot="icon">
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M12 6v12m6-6H6" />
+                                    </svg>
+                                    <svg class="hidden size-6" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5"
+                                        stroke="currentColor" aria-hidden="true"
+                                        data-slot="icon">
+                                        <path stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M18 12H6" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </dt>
+                        <dd class="mt-2 pr-12 faq-answer" id="faq-6"
+                            aria-hidden="true">
+                            <p
+                                class="text-base/7 text-gray-600">A3：
+                                傳統矯正是透過固定式金屬托槽與鋼線移動牙齒，適用於多種齒列問題，但外觀明顯、清潔困難，且配戴時容易造成口腔不適。隱適美則使用一系列透明可拆式牙套，由電腦模擬設計並精準控制牙齒推移路徑。隱適美外觀自然、舒適度高，生活自由度大，適合對外觀與便利性重視的患者。不過，隱適美較適用於輕中度齒列異常，是否適合仍須專業醫師評估。
+                            </p>
+                        </dd>
+                        <dt>
+                            <button type="button"
+                                class="flex w-full items-start justify-between text-left"
                                 aria-controls="faq-2" aria-expanded="false">
                                 <span
-                                    class="text-base/7 font-semibold">為什麼選擇隱適美？有哪些優勢？</span>
+                                    class="text-base/7 font-semibold">Q4.
+                                    為什麼選擇隱適美？有哪些優勢？</span>
                                 <span class="ml-6 flex h-7 items-center">
                                     <svg class="size-6" fill="none"
                                         viewBox="0 0 24 24" stroke-width="1.5"
@@ -365,10 +429,13 @@
                             <p
                                 class="text-base/7 text-gray-600">選擇隱適美主要是因為它結合「美觀」、「舒適」、「科技化」、「高預測性」，特別適合在意外表、職業需求或社交場合頻繁的族群。
                                 優勢包括：
-                                • 3D數位模擬，矯正過程可視化，治療更可預期
-                                • 不易被他人察覺，社交自信不受影響
-                                • 可拆卸設計，飲食自由、清潔便利，降低蛀牙風險
-                                • 可針對局部移動做微調，咬合功能與美觀同時兼顧
+                                <ul class="list-disc">
+                                    <li>3D數位模擬，矯正過程可視化，治療更可預期</li>
+                                    <li>3D數位模擬，矯正過程可視化，治療更可預期</li>
+                                    <li>不易被他人察覺，社交自信不受影響</li>
+                                    <li>可拆卸設計，飲食自由、清潔便利，降低蛀牙風險</li>
+                                    <li>可針對局部移動做微調，咬合功能與美觀同時兼顧</li>
+                                </ul>
                             </p>
                         </dd>
                         <dt>
@@ -402,11 +469,14 @@
                             aria-hidden="true">
                             <p
                                 class="text-base/7 text-gray-600">隱適美的費用主要依照下列因素決定：
-                                1. 個人牙齒狀況複雜程度（牙套數量越多，費用越高）
-                                2. 治療目標（局部微調 vs 全口矯正）
-                                3. 是否需配合其他治療（拔牙、貼片、咬合調整）
-                                4. 診所收費制度與醫師經驗值
-
+                                <ul class="my-4">
+                                    <li class="mb-2"> 1.
+                                        個人牙齒狀況複雜程度（牙套數量越多，費用越高）</li>
+                                    <li class="mb-2">2. 治療目標（局部微調 vs 全口矯正）</li>
+                                    <li class="mb-2">3.
+                                        是否需配合其他治療（拔牙、貼片、咬合調整）</li>
+                                    <li class="mb-2">4. 診所收費制度與醫師經驗值</li>
+                                </ul>
                                 ➡️ 美德美學牙醫診所會依情況先進行初診與拍片評估後，再報出正式報價，也有提供
                                 分期付款方案，讓患者負擔較輕鬆。
 
@@ -443,10 +513,11 @@
                             aria-hidden="true">
                             <p
                                 class="text-base/7 text-gray-600">隱適美本身沒有明確的年齡上限，關鍵在於患者的牙齒與牙周健康狀況是否適合移動牙齒。常見使用對象為：
-                                • 青少年（Teen）系列：設計含有配戴偵測點、可容納乳牙與恆牙交替的空間
-                                • 成人（Adult）系列：適合已經換牙完成者
-                                • 中老年人：只要牙周狀況良好，即使60歲以上也可以安全進行
-
+                                <ul class="list-disc my-4">
+                                    <li>青少年（Teen）系列：設計含有配戴偵測點、可容納乳牙與恆牙交替的空間</li>
+                                    <li>成人（Adult）系列：適合已經換牙完成者</li>
+                                    <li>中老年人：只要牙周狀況良好，即使60歲以上也可以安全進行</li>
+                                </ul>
                                 重要的是經由專業醫師評估骨質與牙周狀況，確保矯正移動過程不會造成牙齦萎縮或牙齒鬆動。
                             </p>
                         </dd>
@@ -455,7 +526,8 @@
                                 class="flex w-full items-start justify-between text-left"
                                 aria-controls="faq-5" aria-expanded="false">
                                 <span
-                                    class="text-base/7 font-semibold">隱適美可以瘦臉或改變臉型嗎？
+                                    class="text-base/7 font-semibold">Q7.
+                                    隱適美可以瘦臉或改變臉型嗎？
                                 </span>
                                 <span class="ml-6 flex h-7 items-center">
                                     <svg class="size-6" fill="none"
@@ -481,9 +553,11 @@
                             aria-hidden="true">
                             <p
                                 class="text-base/7 text-gray-600">隱適美本質是牙齒矯正裝置，其主要作用是移動牙齒、改善咬合與排列。雖然不是整形手術，但當牙齒位置與咬合改善後，下巴線條、笑容寬度、臉部比例可能會產生視覺變化，尤其：
-                                • 原本嘴凸者，矯正後嘴唇輪廓會更自然收斂
-                                • 咬合不正導致臉歪、咀嚼肌不對稱者，經矯正有機會改善平衡
-                                • 尖牙外露、齒列擁擠導致臉看起來緊繃者，可隨排列改善而視覺「柔和」
+                                <ul class="my-4 list-disc">
+                                    <li>原本嘴凸者，矯正後嘴唇輪廓會更自然收斂</li>
+                                    <li>咬合不正導致臉歪、咀嚼肌不對稱者，經矯正有機會改善平衡</li>
+                                    <li> 尖牙外露、齒列擁擠導致臉看起來緊繃者，可隨排列改善而視覺「柔和」</li>
+                                </ul>
 
                                 但⚠️要注意：隱適美並非瘦臉療程或下顎整型手術，改變臉型的幅度有限且因人而異。
 
@@ -493,6 +567,17 @@
                 </div>
             </div>
         </section>
+
+        <div class="parallax relative bg-cover">
+            <div
+                class="absolute text-white w-4xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 text-center">
+                <h3 class="mb-4 text-4xl">選擇我們為您植牙的理由</h3>
+                <p class="leading-8">2023 年全球的人工植牙成功率為
+                    95%；同年，祐民牙醫診所植牙矯正中心的植牙成功率為
+                    99.5%，超出了世界平均值 5
+                    個百分點，我們秉持著不斷努力的精神與細心的手術技巧，為了提供更完善的醫療服務而繼續向前邁進！</p>
+            </div>
+        </div>
 
         <section>
             <div class="flex flex-wrap  text-center ">
@@ -530,7 +615,7 @@
                     </a>
                 </div>
                 <div
-                    class="bg-skin text-white w-1/3 px-8 py-32 hover:bg-gray-800">
+                    class="bg-skin text-white w-full sm:w-1/3 px-8 py-32 hover:bg-gray-800">
                     <h3 class="text-3xl font-medium inline-block mb-8">
                         陶瓷貼片 </h3>
                     <p class="mb-4">一種極薄的陶瓷片,改善牙齒顔 色、形狀、縫隙與排列問題。療 程快速、效果自然持久,是追求
@@ -924,7 +1009,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const counters = document.querySelectorAll('.value');
-const speed = 1000000;
+const speed = 100;
 
 counters.forEach( counter => {
    const animate = () => {
@@ -934,7 +1019,7 @@ counters.forEach( counter => {
       const time = value / speed;
      if(data < value) {
           counter.innerText = Math.ceil(data + time);
-          setTimeout(animate, 8);
+          setTimeout(animate, 0);
         }else{
           counter.innerText = value;
         }
