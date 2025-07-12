@@ -111,10 +111,10 @@
 
              .parallax {
             /* The image used */
-            background-image: url("https://images.unsplash.com/photo-1742505709415-76b15647ae64?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-image: url("./img/診所-2.png");
 
             /* Set a specific height */
-            min-height: 250px;
+            min-height: 350px;
             width: 100%;
 
             /* Create the parallax scrolling effect */
@@ -123,6 +123,8 @@
             background-repeat: no-repeat;
             background-size: cover;
             }
+
+            tr {height: 50px;}
                         </style>
 
     </head>
@@ -141,7 +143,7 @@
                             class="text-sm items-center hidden lg:ml-6 lg:flex lg:space-x-8">
                             <!-- Current: "border-indigo-500 ", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
                             <a href="#"
-                                class="items-center0 border-b-2 border-transparent px-1 pt-1 font-medium  hover:border-gray-300 hover:text-gray-70 border-sky-700 ">首頁d</a>
+                                class="items-center0 border-b-2 border-transparent px-1 pt-1 font-medium  hover:border-gray-300 hover:text-gray-70 border-sky-700 ">首頁</a>
 
                             <div class="dropdown">
                                 <button
@@ -227,7 +229,7 @@
         </nav>
 
         <header>
-            <img src="https://placehold.co/600x400/" alt
+            <img src="./img/Home_slide1.png" alt
                 class="w-full h-[40rem] object-cover">
         </header>
 
@@ -634,15 +636,25 @@
 
         <section class="py-16">
             <div class="flex flex-wrap text-xl font-medium">
-                <div class="w-full sm:w-1/2 px-4 py-8">
-                    <img src="https://placehold.co/600x400/" alt
-                        class="w-full h-[40rem] object-cover">
+                <div
+                    class="w-full sm:w-1/2 px-4 py-8 flex items-center flex-col">
+                    <h3
+                        class="text-5xl text-center text-skin font-medium mb-8">董昱彥
+                        院長</h3>
+                    <img src="./img/doctor-img1.jpg" alt
+                        class="h-[40rem] object-cover rounded-2xl shadow-2xl"
+                        style="width: 80%;">
                 </div>
                 <div class="w-full sm:w-1/2 w-1/2 px-8 py-8">
                     <p>
+                        從小對藝術就非常有興趣, 除了學術課業之外, 各種藝術創作, 繪畫, 攝影 音樂等都為強項.
+                        這也在日後對於董醫師對牙齒與微笑美學的標準 奠定了很重要的基礎。
 
-                        每個人天生的牙齒不一定完美的,但是只要透過異月新的醫療技
-                        術,以及一位醫技精湛的醫師,就可以將您的牙齒變成理想中的樣 子,讓您更自在、自信,更盡情地微笑迎接每一刻。
+                        因為外文能力佳 所以各種國際進修課程都得心應手 所以對各個專業的學習跟進修都非常認真鑽研.
+                        也因為對法國餐酒文化的喜愛, 在因緣際會下取得法國五大酒莊之首 拉菲
+                        的台灣代理(拉菲·羅斯柴爾德酒莊,Domain Barons de Rothchild)。
+
+                        綜合了專業和品味 在台北美德為大家帶來不一樣的笑容
                     </p>
                     <h3
                         class="mb-4 text-skin text-3xl text-center my-8 font-semibold">
@@ -711,7 +723,7 @@
                                     是一個強大的電子商務平台，逐漸受到各種規模的企業歡迎。對於新手來說，了解這個平台是什麼以及如何運作可能有些困難。因此，本文旨在全面介紹
                                     Woocommerce，探討其歷史...<a
                                         href="https://www.bigboycancode.com/posts/woocommerce-guide/"
-                                        class="text-sm text-skin">...繼續閱讀</a>>
+                                        class="text-sm text-skin">...繼續閱讀</a>
                                 </p>
                             </div>
                         </div> <!-- card -->
@@ -752,7 +764,7 @@
                                     是一個強大的電子商務平台，逐漸受到各種規模的企業歡迎。對於新手來說，了解這個平台是什麼以及如何運作可能有些困難。因此，本文旨在全面介紹
                                     Woocommerce，探討其歷史...<a
                                         href="https://www.bigboycancode.com/posts/woocommerce-guide/"
-                                        class="text-sm text-skin">...繼續閱讀</a>>
+                                        class="text-sm text-skin">...繼續閱讀</a>
                                 </p>
                             </div>
                         </div> <!-- card -->
@@ -793,7 +805,7 @@
                                     是一個強大的電子商務平台，逐漸受到各種規模的企業歡迎。對於新手來說，了解這個平台是什麼以及如何運作可能有些困難。因此，本文旨在全面介紹
                                     Woocommerce，探討其歷史...<a
                                         href="https://www.bigboycancode.com/posts/woocommerce-guide/"
-                                        class="text-sm text-skin">...繼續閱讀</a>>
+                                        class="text-sm text-skin">...繼續閱讀</a>
                                 </p>
                             </div>
                         </div> <!-- card -->
@@ -807,116 +819,271 @@
             <div class="container mx-auto">
                 <div class="flex flex-wrap mx-0 px-3 sm:-mx-6">
                     <div
-                        class="w-full sm:w-4/12 px-8 sm:px-6 mt-8 sm:mt-0">
+                        class="w-full sm:w-1/2 px-8 sm:px-6 mt-8 sm:mt-0">
                         <ul class=" font-normal">
                             <li class="mb-4 flex items-center">
-                                美德美學牙醫診所<br />
-                                台北市大里區慈德路158號<br />
-                                週一至週五 12:00-7:00<br />
-                                週六日公休
+                                美德美學牙醫診所</li>
+                            <li class="mb-4 flex">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" stroke="currentColor"
+                                    stroke-width="1.5" class="size-6 mr-2"
+                                    viewBox="0 0 24 24"><path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /><path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" /></svg>
+                                台北市大安區忠孝東路4段230號6樓</li>
+                            <li class="mb-4 flex"><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" stroke="currentColor"
+                                    stroke-width="1.5" class="size-6 mr-2"
+                                    viewBox="0 0 24 24"><path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" /></svg>
+                                02-27711033
+                            </li>
+                            <li class="flex">
+                                <ul class="mt-2 flex">
+                                    <li>
+                                        <!-- Youtube -->
+                                        <a target="_blank"
+                                            rel="me noopener noreferrer"
+                                            href="https://www.youtube.com/user/kuanhsuh">
+                                            <svg
+                                                class="h-8 w-8 fill-current text-teal-300 inline-block mr-1"
+                                                viewBox="0 -61 512 512"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M437 0H75C33.602 0 0 33.602 0 75v240c0 41.398 33.602 75 75 75h362c41.398 0 75-33.602 75-75V75c0-41.398-33.602-75-75-75zm0 0"
+                                                    fill="#ff3939"></path>
+                                                <path
+                                                    d="M512 75v240c0 41.398-33.602 75-75 75H256V0h181c41.398 0 75 33.602 75 75zm0 0"
+                                                    fill="#c90232"></path>
+                                                <path
+                                                    d="M256 136.2l-75-41.7v204l75-43.2 105.602-60.6zm0 0"
+                                                    fill="#ececf1"></path>
+                                                <path
+                                                    d="M361.602 194.7L256 255.3V136.2zm0 0"
+                                                    fill="#e2e2e7"></path>
+                                            </svg>
+                                        </a>
+                                        <!-- FB -->
+                                        <a target="_blank"
+                                            rel="me noopener noreferrer"
+                                            href="https://www.facebook.com/bigboycancode/">
+                                            <svg
+                                                class="h-8 w-8 inline-block mr-1"
+                                                viewBox="0 0 512 512"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M497 512H15c-8.284 0-15-6.716-15-15V15C0 6.716 6.716 0 15 0h482c8.284 0 15 6.716 15 15v482c0 8.284-6.716 15-15 15z"
+                                                    fill="#3a559f"></path>
+                                                <path
+                                                    d="M497 0H256v512h241c8.284 0 15-6.716 15-15V15c0-8.284-6.716-15-15-15z"
+                                                    fill="#23448e"></path>
+                                                <path
+                                                    d="M280.681 205.261v-19.248c0-43.534 13.761-42.284 55.081-42.284h1.974c5.523 0 10-4.477 10-10V85.325c0-5.5-4.5-10-10-10h-46.855c-44.753 0-81.37 36.616-81.37 81.37v19.007h-.149v29.559h-35.237c-5.523 0-10 4.477-10 10v46.755c0 5.523 4.477 10 10 10h35.237v154.658c0 5.523 4.477 10 10 10h51.249c5.523 0 10-4.477 10-10V272.017h47.263c5.523 0 10-4.477 10-10l10-46.755c0-5.523-4.477-10-10-10h-57.193z"
+                                                    fill="#fff"></path>
+                                                <path
+                                                    d="M337.874 205.261h-57.193v-19.248c0-43.534 13.761-42.284 55.081-42.284h1.974c5.523 0 10-4.477 10-10V85.325c0-5.5-4.5-10-10-10h-46.855A80.606 80.606 0 00256 83.238v353.437h14.612c5.523 0 10-4.477 10-10V272.017h47.263c5.523 0 10-4.477 10-10l10-46.755c-.001-5.524-4.478-10.001-10.001-10.001z"
+                                                    fill="#d7f2f9"></path>
+                                            </svg>
+                                        </a>
+                                        <a target="_blank"
+                                            rel="me noopener noreferrer"
+                                            href="https://line.me/ti/p/QlwtgbbMMS">
+                                            <svg
+                                                class="h-8 w-8 inline-block mr-1"
+                                                viewBox="0 -11 512 512"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M435.863 60.645C387.683 21.535 323.805 0 256 0S124.32 21.535 76.137 60.645C27.039 100.488 0 153.746 0 210.602c0 53.503 24.348 104.472 68.555 143.515 39.937 35.27 92.96 58.04 150.535 64.875v55.856c0 8.285 6.715 15 15 15 25.945 0 96.18-31.84 155.476-77.528 35.422-27.293 63.809-56.601 84.368-87.12C499.19 287.71 512 249.151 512 210.601c0-56.856-27.04-110.114-76.137-149.957zm0 0"
+                                                    fill="#54e360"></path>
+                                                <path
+                                                    d="M435.863 60.645C387.683 21.535 323.805 0 256 0v485.73c33.285-9.988 86.82-37.394 133.566-73.41 35.422-27.293 63.809-56.601 84.368-87.12C499.19 287.71 512 249.151 512 210.601c0-56.856-27.04-110.114-76.137-149.957zm0 0"
+                                                    fill="#1fbf66"></path>
+                                                <g fill="#e7f0ef">
+                                                    <path
+                                                        d="M164.555 246.516h-34.703v-88.211c0-6.54-6.008-10.93-14.946-10.93s-14.945 4.39-14.945 10.93v104.437c0 6.426 5.746 11.086 13.66 11.086h50.934c6.238 0 10.765-5.742 10.765-13.656 0-8.043-4.425-13.656-10.765-13.656zm0 0M197.668 147.375c-8.938 0-14.941 4.39-14.941 10.93v104.437c0 6.528 6.144 11.086 14.941 11.086 8.66 0 14.941-4.66 14.941-11.086V158.305c0-6.54-6.004-10.93-14.941-10.93zm0 0M299.871 147.375c-8.937 0-14.941 4.39-14.941 10.93v46.097l-22.528-43.535c-5.5-10.469-9.89-13.492-19.566-13.492-8.941 0-14.945 4.457-14.945 11.09v104.277c0 6.528 6.144 11.086 14.945 11.086 8.656 0 14.941-4.66 14.941-11.086v-46.637l26.102 48.801c3.246 5.922 8.629 8.922 15.996 8.922 8.656 0 14.941-4.66 14.941-11.086V158.305c0-6.54-6.003-10.93-14.945-10.93zm0 0"></path>
+                                                </g>
+                                                <path
+                                                    d="M400.95 246.516h-40.97v-23.297h19.922c7.203 0 11.086-6.457 11.086-12.535 0-7.329-4.765-12.856-11.086-12.856H359.98v-23.133h40.97c6.429 0 11.09-5.812 11.09-13.82 0-7.82-4.661-13.5-11.09-13.5h-57.2c-7.914 0-13.656 4.664-13.656 11.09v104.277c0 6.426 5.742 11.086 13.656 11.086h57.2c6.429 0 11.09-5.676 11.09-13.5 0-8.004-4.661-13.812-11.09-13.812zm0 0M299.871 147.375c-8.937 0-14.941 4.39-14.941 10.93v46.097l-22.528-43.535c-2.172-4.14-4.18-7.101-6.402-9.183V268.23a9.295 9.295 0 001.777-5.488v-46.637l26.102 48.801c3.246 5.922 8.629 8.922 15.996 8.922 8.656 0 14.941-4.66 14.941-11.086V158.305c0-6.54-6.003-10.93-14.945-10.93zm0 0"
+                                                    fill="#c5e1e6"></path>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                class="h-8 w-8 inline-block mr-1"
+                                                width="100" height="100"
+                                                viewBox="0 0 48 48"><path
+                                                    fill="#1c9957"
+                                                    d="M42 39V9a3 3 0 0 0-3-3H9a3 3 0 0 0-3 3v30a3 3 0 0 0 3 3h30a3 3 0 0 0 3-3z" /><path
+                                                    fill="#3e7bf1"
+                                                    d="M9 42h30c1.657 0-15-16-15-16S7.343 42 9 42z" /><path
+                                                    fill="#cbccc9"
+                                                    d="M42 39V9c0-1.657-16 15-16 15s16 16.657 16 15z" /><path
+                                                    fill="#efefef"
+                                                    d="M39 42a3 3 0 0 0 3-3v-.245L26.245 23 23 26.245 38.755 42H39z" /><path
+                                                    fill="#ffd73d"
+                                                    d="M42 9a3 3 0 0 0-3-3h-.245L6 38.755V39a3 3 0 0 0 3 3h.245L42 9.245V9z" /><path
+                                                    fill="#d73f35"
+                                                    d="M36 2c-5.523 0-10 4.477-10 10 0 6.813 7.666 9.295 9.333 19.851.107.68.115 1.149.667 1.149s.56-.469.667-1.149C38.334 21.295 46 18.813 46 12c0-5.523-4.477-10-10-10z" /><path
+                                                    fill="#752622"
+                                                    d="M36 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 1 0 0-7Z" /><path
+                                                    fill="#fff"
+                                                    d="M14.493 12.531v2.101h2.994c-.392 1.274-1.455 2.185-2.994 2.185a3.317 3.317 0 1 1 2.156-5.837l1.548-1.547A5.5 5.5 0 1 0 14.493 19c4.81 0 5.637-4.317 5.184-6.461l-5.184-.008z" /></svg>
+                                        </a>
+
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
 
-                    <div
-                        class="w-full sm:w-4/12 px-8 sm:px-6 mt-8 sm:mt-0">
-                        <div class=" flex items-center  font-normal">
-                            美德美學牙醫診所<br />
-                            台中市大里區慈德路158號<br />
-                            04-24966788<br />
-                            週一至週三
-                            <br />&nbsp;&nbsp;&nbsp;&nbsp;09:30–11:30<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;14:00–16:30 <br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;18:00–21:00<br />
-                            週四、週五<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;09:30–12:30 <br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;14:00–16:30 <br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;17:30–19:00<br />
-                            週六<br /> &nbsp;&nbsp;&nbsp;&nbsp;09:30–11:30 <br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;14:00–17:00<br />
-                            週日公休
-                        </div>
+                    <div class="w-full sm:w-1/2">
+                        <table
+                            class="w-full border-collapse  text-center">
+                            <tbody>
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <td>禮拜一</td>
+                                    <td>禮拜二</td>
+                                    <td>禮拜三</td>
+                                    <td>禮拜四</td>
+                                    <td>禮拜五</td>
+                                    <td>禮拜六</td>
+                                </tr>
+                                <tr>
+                                    <th>12:00 – 19:00</th>
+                                    <td><span class>●</span></td>
+                                    <td><span class>●</span></td>
+                                    <td><span class>●</span></td>
+                                    <td><span class>●</span></td>
+                                    <td><span class>●</span></td>
+                                    <td><span class>●</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
+                </div>
 
+                <div class="flex flex-wrap mx-0 px-3 sm:-mx-6 mt-8">
                     <div
-                        class="w-full sm:w-4/12 px-8 sm:px-6 mt-8 sm:mt-0">
-                        美德美學牙醫診所<br>
-                        台北市大安區忠孝東路4段230號6樓<br>02-27711033
-                        <ul class="mt-2 flex">
-                            <li>
-                                <!-- Youtube -->
-                                <a target="_blank"
-                                    rel="me noopener noreferrer"
-                                    href="https://www.youtube.com/user/kuanhsuh">
-                                    <svg
-                                        class="h-8 w-8 fill-current text-teal-300 inline-block mr-2"
-                                        viewBox="0 -61 512 512"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M437 0H75C33.602 0 0 33.602 0 75v240c0 41.398 33.602 75 75 75h362c41.398 0 75-33.602 75-75V75c0-41.398-33.602-75-75-75zm0 0"
-                                            fill="#ff3939"></path>
-                                        <path
-                                            d="M512 75v240c0 41.398-33.602 75-75 75H256V0h181c41.398 0 75 33.602 75 75zm0 0"
-                                            fill="#c90232"></path>
-                                        <path
-                                            d="M256 136.2l-75-41.7v204l75-43.2 105.602-60.6zm0 0"
-                                            fill="#ececf1"></path>
-                                        <path
-                                            d="M361.602 194.7L256 255.3V136.2zm0 0"
-                                            fill="#e2e2e7"></path>
-                                    </svg>
-                                </a>
+                        class="w-full sm:w-1/2 px-8 sm:px-6 mt-8 sm:mt-0">
+                        <ul class=" font-normal">
+                            <li class="mb-4 flex items-center">
+                                美德美學牙醫診所</li>
+                            <li class="mb-4 flex">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" stroke="currentColor"
+                                    stroke-width="1.5" class="size-6 mr-2"
+                                    viewBox="0 0 24 24"><path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /><path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" /></svg>
+                                台中市大里區慈德路158號</li>
+                            <li class="mb-4 flex"><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" stroke="currentColor"
+                                    stroke-width="1.5" class="size-6 mr-2"
+                                    viewBox="0 0 24 24"><path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" /></svg>
+                                04-24966788
                             </li>
-                            <li>
-                                <!-- FB -->
-                                <a target="_blank"
-                                    rel="me noopener noreferrer"
-                                    href="https://www.facebook.com/bigboycancode/">
-                                    <svg
-                                        class="h-8 w-8 inline-block mr-2"
-                                        viewBox="0 0 512 512"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M497 512H15c-8.284 0-15-6.716-15-15V15C0 6.716 6.716 0 15 0h482c8.284 0 15 6.716 15 15v482c0 8.284-6.716 15-15 15z"
-                                            fill="#3a559f"></path>
-                                        <path
-                                            d="M497 0H256v512h241c8.284 0 15-6.716 15-15V15c0-8.284-6.716-15-15-15z"
-                                            fill="#23448e"></path>
-                                        <path
-                                            d="M280.681 205.261v-19.248c0-43.534 13.761-42.284 55.081-42.284h1.974c5.523 0 10-4.477 10-10V85.325c0-5.5-4.5-10-10-10h-46.855c-44.753 0-81.37 36.616-81.37 81.37v19.007h-.149v29.559h-35.237c-5.523 0-10 4.477-10 10v46.755c0 5.523 4.477 10 10 10h35.237v154.658c0 5.523 4.477 10 10 10h51.249c5.523 0 10-4.477 10-10V272.017h47.263c5.523 0 10-4.477 10-10l10-46.755c0-5.523-4.477-10-10-10h-57.193z"
-                                            fill="#fff"></path>
-                                        <path
-                                            d="M337.874 205.261h-57.193v-19.248c0-43.534 13.761-42.284 55.081-42.284h1.974c5.523 0 10-4.477 10-10V85.325c0-5.5-4.5-10-10-10h-46.855A80.606 80.606 0 00256 83.238v353.437h14.612c5.523 0 10-4.477 10-10V272.017h47.263c5.523 0 10-4.477 10-10l10-46.755c-.001-5.524-4.478-10.001-10.001-10.001z"
-                                            fill="#d7f2f9"></path>
-                                    </svg>
-                                </a>
+                            <li class="flex">
+                                <ul class="mt-2 flex">
+                                    <li>
 
-                            </li>
-                            <li>
-                                <a target="_blank"
-                                    rel="me noopener noreferrer"
-                                    href="https://line.me/ti/p/QlwtgbbMMS">
-                                    <svg
-                                        class="h-8 w-8 inline-block mr-2"
-                                        viewBox="0 -11 512 512"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M435.863 60.645C387.683 21.535 323.805 0 256 0S124.32 21.535 76.137 60.645C27.039 100.488 0 153.746 0 210.602c0 53.503 24.348 104.472 68.555 143.515 39.937 35.27 92.96 58.04 150.535 64.875v55.856c0 8.285 6.715 15 15 15 25.945 0 96.18-31.84 155.476-77.528 35.422-27.293 63.809-56.601 84.368-87.12C499.19 287.71 512 249.151 512 210.601c0-56.856-27.04-110.114-76.137-149.957zm0 0"
-                                            fill="#54e360"></path>
-                                        <path
-                                            d="M435.863 60.645C387.683 21.535 323.805 0 256 0v485.73c33.285-9.988 86.82-37.394 133.566-73.41 35.422-27.293 63.809-56.601 84.368-87.12C499.19 287.71 512 249.151 512 210.601c0-56.856-27.04-110.114-76.137-149.957zm0 0"
-                                            fill="#1fbf66"></path>
-                                        <g fill="#e7f0ef">
-                                            <path
-                                                d="M164.555 246.516h-34.703v-88.211c0-6.54-6.008-10.93-14.946-10.93s-14.945 4.39-14.945 10.93v104.437c0 6.426 5.746 11.086 13.66 11.086h50.934c6.238 0 10.765-5.742 10.765-13.656 0-8.043-4.425-13.656-10.765-13.656zm0 0M197.668 147.375c-8.938 0-14.941 4.39-14.941 10.93v104.437c0 6.528 6.144 11.086 14.941 11.086 8.66 0 14.941-4.66 14.941-11.086V158.305c0-6.54-6.004-10.93-14.941-10.93zm0 0M299.871 147.375c-8.937 0-14.941 4.39-14.941 10.93v46.097l-22.528-43.535c-5.5-10.469-9.89-13.492-19.566-13.492-8.941 0-14.945 4.457-14.945 11.09v104.277c0 6.528 6.144 11.086 14.945 11.086 8.656 0 14.941-4.66 14.941-11.086v-46.637l26.102 48.801c3.246 5.922 8.629 8.922 15.996 8.922 8.656 0 14.941-4.66 14.941-11.086V158.305c0-6.54-6.003-10.93-14.945-10.93zm0 0"></path>
-                                        </g>
-                                        <path
-                                            d="M400.95 246.516h-40.97v-23.297h19.922c7.203 0 11.086-6.457 11.086-12.535 0-7.329-4.765-12.856-11.086-12.856H359.98v-23.133h40.97c6.429 0 11.09-5.812 11.09-13.82 0-7.82-4.661-13.5-11.09-13.5h-57.2c-7.914 0-13.656 4.664-13.656 11.09v104.277c0 6.426 5.742 11.086 13.656 11.086h57.2c6.429 0 11.09-5.676 11.09-13.5 0-8.004-4.661-13.812-11.09-13.812zm0 0M299.871 147.375c-8.937 0-14.941 4.39-14.941 10.93v46.097l-22.528-43.535c-2.172-4.14-4.18-7.101-6.402-9.183V268.23a9.295 9.295 0 001.777-5.488v-46.637l26.102 48.801c3.246 5.922 8.629 8.922 15.996 8.922 8.656 0 14.941-4.66 14.941-11.086V158.305c0-6.54-6.003-10.93-14.945-10.93zm0 0"
-                                            fill="#c5e1e6"></path>
-                                    </svg>
-                                </a>
+                                        <a href="#">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                class="h-8 w-8 inline-block mr-1"
+                                                width="100" height="100"
+                                                viewBox="0 0 48 48"><path
+                                                    fill="#1c9957"
+                                                    d="M42 39V9a3 3 0 0 0-3-3H9a3 3 0 0 0-3 3v30a3 3 0 0 0 3 3h30a3 3 0 0 0 3-3z" /><path
+                                                    fill="#3e7bf1"
+                                                    d="M9 42h30c1.657 0-15-16-15-16S7.343 42 9 42z" /><path
+                                                    fill="#cbccc9"
+                                                    d="M42 39V9c0-1.657-16 15-16 15s16 16.657 16 15z" /><path
+                                                    fill="#efefef"
+                                                    d="M39 42a3 3 0 0 0 3-3v-.245L26.245 23 23 26.245 38.755 42H39z" /><path
+                                                    fill="#ffd73d"
+                                                    d="M42 9a3 3 0 0 0-3-3h-.245L6 38.755V39a3 3 0 0 0 3 3h.245L42 9.245V9z" /><path
+                                                    fill="#d73f35"
+                                                    d="M36 2c-5.523 0-10 4.477-10 10 0 6.813 7.666 9.295 9.333 19.851.107.68.115 1.149.667 1.149s.56-.469.667-1.149C38.334 21.295 46 18.813 46 12c0-5.523-4.477-10-10-10z" /><path
+                                                    fill="#752622"
+                                                    d="M36 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 1 0 0-7Z" /><path
+                                                    fill="#fff"
+                                                    d="M14.493 12.531v2.101h2.994c-.392 1.274-1.455 2.185-2.994 2.185a3.317 3.317 0 1 1 2.156-5.837l1.548-1.547A5.5 5.5 0 1 0 14.493 19c4.81 0 5.637-4.317 5.184-6.461l-5.184-.008z" /></svg>
+                                        </a>
+
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
+                    </div>
+
+                    <div class="w-full sm:w-1/2">
+                        <table
+                            class="w-full border-collapse text-center">
+                            <tbody>
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <td>禮拜一</td>
+                                    <td>禮拜二</td>
+                                    <td>禮拜三</td>
+                                    <td>禮拜四</td>
+                                    <td>禮拜五</td>
+                                    <td>禮拜六</td>
+                                </tr>
+                                <tr>
+                                    <th>09:30 – 11:30</th>
+                                    <td><span class>●</span></td>
+                                    <td><span class>●</span></td>
+                                    <td><span class>●</span></td>
+                                    <td><span class>●</span></td>
+                                    <td><span class>●</span></td>
+                                    <td><span class>●</span></td>
+                                </tr>
+                                <tr>
+                                    <th>14:00 – 16:30</th>
+                                    <td><span class>●</span></td>
+                                    <td><span class>●</span></td>
+                                    <td><span class>●</span></td>
+                                    <td><span class>●</span></td>
+                                    <td><span class>●</span></td>
+                                    <td><span class>●</span></td>
+                                </tr>
+                                <tr>
+                                    <th>17:30 – 19:00</th>
+                                    <td><span class></span></td>
+                                    <td><span class></span></td>
+                                    <td><span class></span></td>
+                                    <td><span class>●</span></td>
+                                    <td><span class>●</span></td>
+                                    <td><span class></span></td>
+                                </tr>
+                                <tr>
+                                    <th>18:00 – 21:00</th>
+                                    <td><span class>●</span></td>
+                                    <td><span class>●</span></td>
+                                    <td><span class>●</span></td>
+                                    <td><span class></span></td>
+                                    <td><span class></span></td>
+                                    <td><span class></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
 
@@ -1019,7 +1186,7 @@ counters.forEach( counter => {
       const time = value / speed;
      if(data < value) {
           counter.innerText = Math.ceil(data + time);
-          setTimeout(animate, 0);
+          setTimeout(animate, 1);
         }else{
           counter.innerText = value;
         }
