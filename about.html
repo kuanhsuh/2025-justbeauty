@@ -25,6 +25,106 @@
 
     </head>
     <body class="font-light tracking-wider text-gray-600 leading-8">
+
+        <nav class="bg-white shadow fixed w-full z-50 top-0 py-4 text-skin">
+            <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
+                <div class="flex h-12 justify-between">
+                    <div class="flex px-2 lg:px-0 justify-between w-full">
+                        <a href="https://aiidee.com.tw"
+                            class="flex flex-shrink-0 items-center">
+                            <img class="logo-white block w-36"
+                                src="./nav-logo.png"
+                                alt="Company name">
+                        </a>
+                        <div id="list"
+                            class="text-sm items-center hidden lg:ml-6 lg:flex lg:space-x-8">
+                            <!-- Current: "border-indigo-500 ", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
+                            <a href="#"
+                                class="items-center0 border-b-2 border-transparent px-1 pt-1 font-medium  hover:border-gray-300 hover:text-gray-70 border-sky-700 ">首頁</a>
+
+                            <div class="dropdown">
+                                <button
+                                    class="dropbtn items-center border-b-2 border-transparent px-1 pt-1 font-medium  hover:border-gray-300 ">診療項目</button>
+                                <div class="dropdown-content">
+                                    <a
+                                        href="#">全口重建</a>
+                                    <a
+                                        href="#">微創植牙</a>
+                                    <a
+                                        href="#">隱適美</a>
+                                    <a
+                                        href="#">美白貼片</a>
+                                    <a
+                                        href="#">全瓷冠</a>
+                                    <a
+                                        href="#">冷光美白</a>
+                                    <a
+                                        href="#">牙周治療</a>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="items-center border-b-2 border-transparent px-1 pt-1 font-medium  hover:border-gray-300  ">關於我們</a>
+                            <a href="#"
+                                class="items-center border-b-2 border-transparent px-1 pt-1 font-medium  hover:border-gray-300  ">醫療團隊</a>
+                            <a href="#"
+                                class="items-center border-b-2 border-transparent px-1 pt-1 font-medium  hover:border-gray-300  ">最新消息</a>
+                            <a href="#"
+                                class="items-center border-b-2 border-transparent px-1 pt-1 font-medium  hover:border-gray-300  ">案例分享</a>
+
+                            <a href="#"
+                                class="items-center border-b-2 border-transparent px-1 pt-1 font-medium  hover:border-gray-300  ">聯絡我們</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center lg:hidden">
+                        <!-- Mobile menu button -->
+                        <button id="menuButton" type="button"
+                            class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                            aria-controls="mobile-menu" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg
+                                class="svg-icon fill-current text-gray-500  block h-6 w-6"
+                                xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div
+                class="hidden lg:hidden border-b border-gray-200 bg-white text-gray-600"
+                id="mobile-menu">
+                <div class="space-y-1 pt-2 pb-3">
+                    <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800" -->
+                    <a href="https://aiidee.com.tw"
+                        class="block border-l-4 border-sky-700 bg-sky-50 py-2 pl-3 pr-4 text-base font-medium text-sky-700">首頁</a>
+                    <a href="https://aiidee.com.tw/about"
+                        class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium  hover:border-gray-70 hover:bg-gray-50">關於</a>
+                    <a href="https://aiidee.com.tw/team"
+                        class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium  hover:border-gray-70 hover:bg-gray-50">團隊介紹</a>
+                    <a href="https://aiidee.com.tw/services"
+                        class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium  hover:border-gray-70 hover:bg-gray-50">服務流程</a>
+                    <a href="https://pse.is/adwebQAup"
+                        class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium  hover:border-gray-70 hover:bg-gray-50">預約諮詢</a>
+                    <a href="https://aiidee.com.tw/projects"
+                        class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium  hover:border-gray-70 hover:bg-gray-50">作品總覽</a>
+                    <a href="https://aiidee.com.tw/videos-"
+                        class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium  hover:border-gray-70 hover:bg-gray-50">影片專區</a>
+                    <a href="https://aiidee.com.tw/news-"
+                        class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium  hover:border-gray-70 hover:bg-gray-50">部落格</a>
+                    <a href="https://aiidee.com.tw/contact"
+                        class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium  hover:border-gray-70 hover:bg-gray-50">聯絡我們</a>
+                </div>
+            </div>
+        </nav>
+
         <header
             style="background: url(https://images.pexels.com/photos/7723391/pexels-photo-7723391.jpeg) center/cover; height: 300px;"
             class="relative text-white header-bg-img bg-cover">
